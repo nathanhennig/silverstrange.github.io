@@ -2,7 +2,7 @@
 layout: post
 title:  "Basic Routing in Rails"
 author: "Nathan Hennig"
-date:   2019-04-10 22:00:00 -0800
+date:   2019-04-10 22:00:00 -0700
 tags:   ruby rails routing
 ---
 
@@ -129,7 +129,7 @@ The `:to` parameter sets the controller#action and is required. The `:as` parame
 
 A common case is to have resources that are related to each other. For example, articles have many comments and a comment belongs to an article. In such a case you'll want to nest the resources to show the relationship.
 
-```
+```ruby
 resources :articles do
   resources :comments
 end
